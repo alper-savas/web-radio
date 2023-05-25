@@ -1,0 +1,43 @@
+.heroContainer {
+  width: 100vw;
+  height: 70rem;
+  position: relative;
+}
+
+.imgContainer {
+  height: 70rem;
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #000;
+  display: flex;
+}
+
+.heroImg {
+  height: 100%;
+  width: 100%;
+  margin: auto auto;
+}
+
+.heroButton {
+  font-size: 2.4rem;
+  color: #fff;
+  background-color: #222;
+  font-weight: 300;
+  border: solid 1px #fff;
+  border-radius: 10rem;
+  padding: 1.2rem 3.2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 5rem;
+}
+
+.heroText {
+  width: 25rem;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 300;
+  position: absolute;
+  bottom: 2rem;
+  left: 45rem;
+  letter-spacing: 2px;
+}

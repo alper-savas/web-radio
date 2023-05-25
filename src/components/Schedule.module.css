@@ -1,0 +1,54 @@
+.sectionContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.leftSection {
+  height: 100vh;
+  background-color: #7149c6;
+}
+
+.leftSection img {
+  margin: 14% 17%;
+}
+
+.logos {
+  display: flex;
+  position: absolute;
+  left: 17%;
+  gap: 1.4rem;
+  height: 12%;
+  width: 12%;
+  transform: translateY(-115%);
+}
+
+.rightSection {
+  height: 100vh;
+  background-color: #222;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  margin-top: 6rem;
+  margin-left: 4rem;
+}
+
+.buttons button {
+  width: 11rem;
+  height: 4rem;
+  font-size: 2.2rem;
+  background-color: #222;
+  color: #7149c6;
+  border: 1.2px solid #7149c6;
+  border-radius: 1.8rem;
+}
+
+.buttons button:hover {
+  background-color: #7149c6;
+  color: #222;
+  border: 1.2px solid #222;
+}
