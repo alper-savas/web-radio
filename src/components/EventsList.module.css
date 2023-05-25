@@ -1,0 +1,53 @@
+.eventsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.eventsGrid li {
+  list-style-type: none;
+}
+
+.innerContainer {
+  position: relative;
+}
+
+.eventsImage img {
+  height: 30rem;
+  width: 30rem;
+  margin-left: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
+
+.eventsImageHover img {
+  opacity: 0.3;
+  filter: invert(100%);
+  transition: all 0.3s ease-in;
+}
+
+.onHover {
+  position: absolute;
+  top: 14rem;
+  left: 7.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #000;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.onHover h2 {
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+
+.onHover p {
+  width: 20rem;
+}
+
+.active {
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}

@@ -1,0 +1,52 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 1.3rem;
+  font-weight: 400;
+  background-color: #222;
+  color: #ddd;
+  padding: 4rem 3rem 3rem 1rem;
+  letter-spacing: 1.3px;
+  justify-items: center;
+  line-height: 2rem;
+}
+
+.footer p {
+  width: 25rem;
+}
+
+.radioInfo h1 {
+  margin-bottom: 0.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #7149c6;
+}
+
+.quickLinks h3 {
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #7149c6;
+}
+
+.quickLinks p {
+  padding-bottom: 0.6rem;
+}
+
+.contact h3 {
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #7149c6;
+}
+
+.newsletter h3 {
+  margin-bottom: 1.4rem;
+}
+
+.newsletter button {
+  display: block;
+  margin-bottom: 1.2rem;
+  padding: 0.8rem 1.6rem;
+  background-color: #222;
+  color: #ddd;
+  border: 1px solid #7149c6;
+  border-radius: 2rem;
+}

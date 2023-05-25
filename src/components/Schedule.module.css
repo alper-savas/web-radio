@@ -26,15 +26,15 @@
   height: 100vh;
   background-color: #222;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 5.6rem;
   margin-top: 6rem;
-  margin-left: 4rem;
+  margin-left: 4.6rem;
 }
 
 .buttons button {
@@ -51,4 +51,24 @@
   background-color: #7149c6;
   color: #222;
   border: 1.2px solid #222;
+}
+
+.scheduleContainer {
+  margin-left: 7rem;
+  margin-top: 3.2rem;
+  margin-right: 1rem;
+}
+
+.schedule {
+  font-size: 3.2rem;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.7rem;
+}
+
+.active {
+  color: #ddd !important;
+  border: 1.5px solid #ddd !important;
 }

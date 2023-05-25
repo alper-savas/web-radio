@@ -5,7 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import { NavLink } from "react-router-dom";
 import { ReactComponent as ChevronBack } from "../assets/chevron-back-sharp.svg";
 import { ReactComponent as ChevronForward } from "../assets/chevron-forward-sharp.svg";
-import { picksImages, responsive } from "../data/picksData";
+import { picksImages, responsive } from "../data/homepageData";
 import { useState } from "react";
 
 const PicksSlider = () => {
@@ -21,7 +21,7 @@ const PicksSlider = () => {
 
   return (
     <Fragment>
-      <div className={classes.picks}>Radio Picks</div>
+      <div className={classes.picks}>Monthly Picks</div>
       <Carousel
         responsive={responsive}
         infinite={true}

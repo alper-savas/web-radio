@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-const ShowsRootLayout = () => {
+const PicksRootLayout = () => {
   return (
     <div>
       <Outlet />
@@ -8,4 +8,4 @@ const ShowsRootLayout = () => {
   );
 };
 
-export default ShowsRootLayout;
+export default PicksRootLayout;

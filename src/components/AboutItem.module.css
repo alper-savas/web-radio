@@ -1,0 +1,13 @@
+.container {
+  text-align: center;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 50%;
+  margin: 8rem auto;
+  color: #555;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  line-height: 3rem;
+}

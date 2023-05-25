@@ -1,5 +1,5 @@
 import classes from "./Hero.module.css";
-import heroImage from "../assets/images/hero2-background.webp";
+import heroImage from "../assets/images/hero-background.webp";
 
 const Hero = () => {
   return (

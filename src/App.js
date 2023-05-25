@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./pages/RootLayout";
 import HomePage from "./pages/HomePage";
-import ShowsRootLayout from "./pages/ShowsRootLayout";
-import ShowsPage from "./pages/ShowsPage";
-import ShowDetailPage from "./pages/ShowsDetailPage";
-import ArtistsRootLayout from "./pages/ArtistRootLayout";
-import ArtistsPage from "./pages/ArtistsPage";
-import ArtistDetailPage from "./pages/ArtistsDetailPage";
+import EventsRootLayout from "./pages/EventsRootLayout";
+import EventsPage from "./pages/EventsPage";
+import EventDetailPage from "./pages/EventDetailPage";
+import PicksRootLayout from "./pages/PicksRootLayout";
+import PicksPage from "./pages/PicksPage";
+import PicksDetailPage from "./pages/PicksDetailPage";
 import AboutPage from "./pages/AboutPage";
 
 const router = createBrowserRouter([
@@ -19,32 +19,32 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "shows",
-        element: <ShowsRootLayout />,
+        path: "picks",
+        element: <PicksRootLayout />,
         children: [
           {
             index: true,
-            element: <ShowsPage />,
+            element: <PicksPage />,
           },
           {
-            path: ":showId",
-            id: "show-detail",
-            element: <ShowDetailPage />,
+            path: ":picksId",
+            id: "picks-detail",
+            element: <PicksDetailPage />,
           },
         ],
       },
       {
-        path: "artists",
-        element: <ArtistsRootLayout />,
+        path: "events",
+        element: <EventsRootLayout />,
         children: [
           {
             index: true,
-            element: <ArtistsPage />,
+            element: <EventsPage />,
           },
           {
-            path: ":artistId",
-            id: "artist-detail",
-            element: <ArtistDetailPage />,
+            path: ":eventId",
+            id: "event-detail",
+            element: <EventDetailPage />,
           },
         ],
       },
