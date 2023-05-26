@@ -1,10 +1,8 @@
-import { Outlet, useLoaderData } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import MainNavigation from "../components/MainNavigation";
 import MainFooter from "../components/MainFooter";
 
 const RootLayout = () => {
-  // const data = useLoaderData();
-
   return (
     <div>
       <MainNavigation />
@@ -15,7 +13,3 @@ const RootLayout = () => {
 };
 
 export default RootLayout;
-
-// export async function loader() {
-//   fetch api data and return
-// }

@@ -1,21 +1,17 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import classes from "./MainNavigation.module.css";
-import { ReactComponent as PlayIcon } from "../assets/play-outline.svg";
-import { ReactComponent as PauseIcon } from "../assets/pause-outline.svg";
 import mainLogo from "../assets/images/main-logo.png";
 
 const MainNavigation = () => {
   const [buttonState, setButtonState] = useState(false);
 
   const handleButtonState = () => {
-    setButtonState((prevState) => {
-      if (prevState === true) {
-        setButtonState(false);
-      } else {
-        setButtonState(true);
-      }
-    });
+    if (buttonState === true) {
+      setButtonState(false);
+    } else {
+      setButtonState(true);
+    }
   };
 
   return (
@@ -26,10 +22,19 @@ const MainNavigation = () => {
           <p>Radiant Radio</p>
         </NavLink>
         <div className={classes.broadcastSection}>
-          <button className={classes.playIcon} onClick={handleButtonState}>
-            {buttonState === false ? <PauseIcon /> : <PlayIcon />}
-          </button>
+          <audio
+            onPlay={handleButtonState}
+            onPause={handleButtonState}
+            src="//stream.radiojar.com/q1mgvh4u4yzuv?1685127245"
+            controls
+            className={
+              buttonState === false
+                ? `${classes.playState}`
+                : `${classes.pauseState}`
+            }
+          ></audio>
           <p>Live</p>
+          <div className={`${classes.circle} ${classes.red}`}></div>
         </div>
         <ul className={classes.mainNavList}>
           <li>

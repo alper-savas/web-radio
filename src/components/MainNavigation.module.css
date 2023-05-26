@@ -36,9 +36,14 @@
   font-size: 1.6rem;
   font-weight: 500;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   color: #ff5733;
-  transform: translateX(-20rem) !important;
+  transform: translateX(-15rem) !important;
+}
+
+.broadcastSection p {
+  z-index: 99999;
+  transform: translateX(-25rem);
 }
 
 .logo {
@@ -65,4 +70,80 @@
 
 .active {
   color: #ff5733;
+}
+
+audio {
+  /* position: absolute; */
+  background-color: #fff;
+  /* transform: translateX(20rem); */
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #fff;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+audio::-webkit-media-controls-timeline {
+  display: none;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+audio::-webkit-media-controls-volume-slider-container {
+  display: none;
+}
+
+audio::-webkit-media-controls-mute-button {
+  display: none;
+}
+
+.playState::-webkit-media-controls-play-button {
+  background-image: url(../assets/play-outline.svg);
+  transform: scale(250%);
+}
+
+.pauseState::-webkit-media-controls-play-button {
+  background-image: url(../assets/pause-outline.svg);
+  transform: scale(250%);
+}
+
+@keyframes up-right {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.circle {
+  border-radius: 1000%;
+  width: 0.5rem;
+  height: 0.5rem;
+  transform: translate(-6.5rem, -0.15rem);
+}
+
+.red {
+  background-color: #ff5733;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: up-right 1s infinite;
 }
