@@ -1,5 +1,5 @@
 import { picksImages } from "../data/homepageData";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import classes from "./PicksList.module.css";
 import { useState } from "react";
 
@@ -17,34 +17,35 @@ const PicksList = () => {
   return (
     <div>
       <ul className={classes.imagesGrid}>
-        {picksImages.map((image) => {
+        {picksImages.map((pick) => {
           return (
-            <li>
-              <NavLink
+            <li key={pick.id}>
+              <Link
+                to={pick.id}
                 className={`${classes.picksImage} ${
-                  id === image.id && classes.picksImageHover
+                  id === pick.id && classes.picksImageHover
                 }`}
-                onMouseEnter={() => handleMouseEnter(image.id)}
+                onMouseEnter={() => handleMouseEnter(pick.id)}
                 onMouseLeave={() => handleMouseLeave()}
               >
                 <div className={classes.innerContainer}>
                   <img
-                    key={image.id}
-                    id={image.id}
-                    src={image.url}
-                    alt={image.description}
+                    key={pick.id}
+                    id={pick.id}
+                    src={pick.url}
+                    alt={pick.description}
                   ></img>
                   <div
                     className={`${classes.onHover} ${
-                      id === image.id && classes.active
+                      id === pick.id && classes.active
                     }`}
                   >
-                    <h2>{image.title}</h2>
-                    <p>{image.subtitle}</p>
-                    <p className={classes.genre}>{image.genre}</p>
+                    <h2>{pick.title}</h2>
+                    <p>{pick.subtitle}</p>
+                    <p className={classes.genre}>{pick.genre}</p>
                   </div>
                 </div>
-              </NavLink>
+              </Link>
             </li>
           );
         })}

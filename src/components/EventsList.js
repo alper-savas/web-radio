@@ -1,5 +1,5 @@
 import { events } from "../data/homepageData";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import classes from "./EventsList.module.css";
 import { useState } from "react";
 
@@ -19,8 +19,9 @@ const EventsList = () => {
       <ul className={classes.eventsGrid}>
         {events.map((event) => {
           return (
-            <li>
-              <NavLink
+            <li key={event.id}>
+              <Link
+                to={`${event.id}`}
                 className={`${classes.eventsImage} ${
                   id === event.id && classes.eventsImageHover
                 }`}
@@ -43,7 +44,7 @@ const EventsList = () => {
                     <p>{event.date}</p>
                   </div>
                 </div>
-              </NavLink>
+              </Link>
             </li>
           );
         })}

@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 7rem 0;
+}
+
+.grid img {
+  height: 100%;
+  width: 100%;
+}
+
+.infoSide {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 2rem;
+  line-height: 3rem;
+  letter-spacing: 1px;
+  margin-left: 5rem;
+}
+
+.infoSide h2 {
+  margin-bottom: 2rem;
+}
+
+.infoSide h4 {
+  margin-bottom: 1.4rem;
+}
+
+.infoSide p {
+  padding-right: 10rem;
+}

@@ -62,3 +62,7 @@
   border: none;
   background-color: #fff;
 }
+
+.active {
+  color: #ff5733;
+}

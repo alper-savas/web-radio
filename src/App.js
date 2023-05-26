@@ -8,11 +8,13 @@ import PicksRootLayout from "./pages/PicksRootLayout";
 import PicksPage from "./pages/PicksPage";
 import PicksDetailPage from "./pages/PicksDetailPage";
 import AboutPage from "./pages/AboutPage";
+// import loader data
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    // loader: importedLoader
     children: [
       {
         index: true,
@@ -27,8 +29,7 @@ const router = createBrowserRouter([
             element: <PicksPage />,
           },
           {
-            path: ":picksId",
-            id: "picks-detail",
+            path: ":pickId",
             element: <PicksDetailPage />,
           },
         ],
@@ -43,7 +44,6 @@ const router = createBrowserRouter([
           },
           {
             path: ":eventId",
-            id: "event-detail",
             element: <EventDetailPage />,
           },
         ],

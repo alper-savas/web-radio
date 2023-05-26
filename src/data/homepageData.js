@@ -1,3 +1,4 @@
+import uuid from "react-uuid";
 import firstImage from "../assets/images/01pick.png";
 import secondImage from "../assets/images/02pick.png";
 import thirdImage from "../assets/images/03pick.png";
@@ -26,6 +27,9 @@ import fifthEvent from "../assets/images/05event.png";
 import sixthEvent from "../assets/images/06event.png";
 import seventhEvent from "../assets/images/07event.png";
 import eighthEvent from "../assets/images/08event.png";
+import ninethEvent from "../assets/images/09event.png";
+import tenthEvent from "../assets/images/10event.png";
+import eleventhEvent from "../assets/images/11event.png";
 
 export const responsive = {
   superLargeDesktop: {
@@ -49,7 +53,7 @@ export const responsive = {
 
 export const picksImages = [
   {
-    id: 1,
+    id: uuid(),
     url: firstImage,
     title: "SHIGEO SEKITO",
     subtitle: "Special Sound Series Vol.2 - The Word Vinyl LP",
@@ -58,7 +62,7 @@ export const picksImages = [
     genre: "Electronic",
   },
   {
-    id: 2,
+    id: uuid(),
     url: secondImage,
     title: "MOBY",
     subtitle: "Play (Import) Vinyl 2LP",
@@ -67,7 +71,7 @@ export const picksImages = [
     genre: "Electronic",
   },
   {
-    id: 3,
+    id: uuid(),
     url: thirdImage,
     title: "FATBOY SLIM",
     subtitle: "You've Come A Long Way Baby (180g, Import) Vinyl 2LP",
@@ -76,7 +80,7 @@ export const picksImages = [
     genre: "Electronic",
   },
   {
-    id: 4,
+    id: uuid(),
     url: fourthImage,
     title: "KOKOROKO",
     subtitle: "Kokoroko Vinyl LP",
@@ -85,7 +89,7 @@ export const picksImages = [
     genre: "Afrobeat",
   },
   {
-    id: 5,
+    id: uuid(),
     url: fifthImage,
     title: "STAN GETZ & JOAO GILBERTO",
     subtitle: "Getz / Gilberto Vinyl LP",
@@ -94,7 +98,7 @@ export const picksImages = [
     genre: "Bossa Nova",
   },
   {
-    id: 6,
+    id: uuid(),
     url: sixthImage,
     title: "EL MICHELS AFFAIR & BLACK THOUGHT",
     subtitle: "Glorious Game Vinyl LP",
@@ -104,7 +108,7 @@ export const picksImages = [
   },
 
   {
-    id: 7,
+    id: uuid(),
     url: seventhImage,
     title: "APHEX TWIN",
     subtitle: "I Care Because You Do (180g) Vinyl 2LP",
@@ -113,7 +117,7 @@ export const picksImages = [
     genre: "IDM",
   },
   {
-    id: 8,
+    id: uuid(),
     url: eighthImage,
     title: "SPITTLE RECORDS",
     subtitle: "Italia New Wave & Post Punk Vinyl LP",
@@ -122,7 +126,7 @@ export const picksImages = [
     genre: "Italian Wave",
   },
   {
-    id: 9,
+    id: uuid(),
     url: ninethImage,
     title: "KHRUANGBIN",
     subtitle: "Live at Stubb's Vinyl LP",
@@ -131,7 +135,7 @@ export const picksImages = [
     genre: "Indie",
   },
   {
-    id: 10,
+    id: uuid(),
     url: tenthImage,
     title: "LEBANON HANOVER",
     subtitle: "Tomb For Two (Colored Vinyl) Vinyl LP",
@@ -140,7 +144,7 @@ export const picksImages = [
     genre: "Dark Wave",
   },
   {
-    id: 11,
+    id: uuid(),
     url: eleventhImage,
     title: "RUPA",
     subtitle: "Moja Bhari Moja / East West Shuffle (Colored Vinyl) Vinyl 7",
@@ -149,7 +153,7 @@ export const picksImages = [
     genre: "Disco Jazz",
   },
   {
-    id: 12,
+    id: uuid(),
     url: twelfthImage,
     title: "SOUNDWAY",
     subtitle: "Doing It In Lagos - 1980s Nigeria Vinyl",
@@ -158,7 +162,7 @@ export const picksImages = [
     genre: "Disco",
   },
   {
-    id: 13,
+    id: uuid(),
     url: thirteenthImage,
     title: "MORT GARSON",
     subtitle: "Mother Earth's Plantasia Vinyl LP",
@@ -167,7 +171,7 @@ export const picksImages = [
     genre: "Ambient & Experimental",
   },
   {
-    id: 14,
+    id: uuid(),
     url: fourteenthImage,
     title: "KIKAGAKU MOYO",
     subtitle: "Kikigaku Moyo (Indie Exclusive) Vinyl LP",
@@ -176,7 +180,7 @@ export const picksImages = [
     genre: "Psy Rock",
   },
   {
-    id: 15,
+    id: uuid(),
     url: fifteenthImage,
     title: "THE CHEMICAL BROTHERS",
     subtitle: "Dig Your Own Hole Vinyl 2LP",
@@ -185,7 +189,7 @@ export const picksImages = [
     genre: "Dance/Electronic",
   },
   {
-    id: 16,
+    id: uuid(),
     url: sixteenthImage,
     title: "MASSIVE ATTACK",
     subtitle: "Protection (Import) Vinyl LP",
@@ -194,7 +198,7 @@ export const picksImages = [
     genre: "Trip-hop",
   },
   {
-    id: 17,
+    id: uuid(),
     url: seventeenthImage,
     title: "AUTECHRE",
     subtitle: "Draft 7.30 Vinyl 2LP",
@@ -202,7 +206,7 @@ export const picksImages = [
     genre: "IDM",
   },
   {
-    id: 18,
+    id: uuid(),
     url: eighteenthImage,
     title: "MDOU MOCTAR",
     subtitle: "Niger EP Vol.2 Vinyl 12",
@@ -211,7 +215,7 @@ export const picksImages = [
     genre: "Rock",
   },
   {
-    id: 19,
+    id: uuid(),
     url: nineteenthImage,
     title: "KING GIZZARD AND THE LIZARD WIZARD",
     subtitle: "Nonagon Infinity Vinyl LP",
@@ -220,7 +224,7 @@ export const picksImages = [
     genre: "Psy Rock",
   },
   {
-    id: 20,
+    id: uuid(),
     url: twentiethImage,
     title: "THE PRODIGY",
     subtitle: "Their Law Vinyl 2LP",
@@ -232,60 +236,91 @@ export const picksImages = [
 
 export const events = [
   {
-    id: 1,
+    id: uuid(),
     url: firstEvent,
     name: "DiscoDisco",
     date: "01.02.2023",
-    description: "Disco Event around the corner!",
+    description:
+      "Summer's officially here, and our lovely community is ready to boogie. Plus, to top it off, Zapata is turning 30 years old! What better way to celebrate than by bringing the party home? Join us for this special birthday bash edition of DiscoDisco, featuring b2b2b2b sets by our residents and some of our favorite friends who we've had the pleasure of playing with over the years (plus a few surprise guests). Arrive early, stay late, and as always, expect a fantastic mix of disco, house, jazz, afro, and everything in between!",
   },
   {
-    id: 2,
+    id: uuid(),
     url: secondEvent,
-    name: "Grounded Theory",
-    date: "23.02.2023",
-    description: "Disco Event around the corner!",
+    name: "Pattern Live",
+    date: "15.04.2023",
+    description:
+      "Pattern Club Live is back with another showcase of cutting-edge experiments in pattern-based music and performance. Acts will include mutant live drum experiments, modular-cyborg-synth arpeggios, and an algorithmic robot dance performance, each feeding our minds with their own twist on patterned form. This will lead into live coded algorithmic bangers from Sheffield's finest algorave musicians.",
   },
   {
-    id: 3,
+    id: uuid(),
     url: thirdEvent,
-    name: "Vulkan Dance",
+    name: "HOME",
     date: "14.03.2023",
-    description: "Disco Event around the corner!",
+    description:
+      "HOME is your recurring after-hours at OHM, the smaller sibling of Tresor dedicated to forward-thinking dance music. HOME strives to be an inviting space for heartfelt eclectisms, a shelter for joyful dancers seeking challenging and uplifting listening experiences. Hosts and residents DJ Swim, Liniae, and Tina will welcome a different secret guest each time from a variety of experienced artists and compelling newcomers.",
   },
   {
-    id: 4,
+    id: uuid(),
     url: fourthEvent,
     name: "Carolco(live)",
     date: "25.03.2023",
-    description: "Disco Event around the corner!",
+    description:
+      "As the city awakens from its post-Covid lethargy, Berlin-based musicians Al Pagoda and Airaboi head into the studio. They are intent on producing a series of tracks governed by spontaneity: `Each session was limited to the number of tracks available on the mixing console,` Pagoda explains. We would mostly record first takes, with very minimal post-production. We wanted to capture the energy of the moment.",
   },
   {
-    id: 5,
+    id: uuid(),
     url: fifthEvent,
     name: "RFLXN",
     date: "02.04.2023",
-    description: "Disco Event around the corner!",
+    description:
+      "Located on the grounds of the former Bärenquell brewery factory in East Berlin. 2 converted Warehouse dancefloors with state of the art sound systems. Custom made by Kirsch Audio. 40kW, 48 channels, 153 drivers, signature horn technology cash and cashless payment. 5 min walk from Schöneweide station, 4 stops from Ostkreuz and 3 stops from Neukölln with S-Bahn. 18 minutes by Bus 165 from Schlesisches Tor",
   },
   {
-    id: 6,
+    id: uuid(),
     url: sixthEvent,
     name: "Bass Down",
     date: "15.04.2023",
-    description: "Disco Event around the corner!",
+    description:
+      "In the walls of Mensch Meier, we present a finest lineup. We start live with DiscoPunk vs.TechnoCrust, then step through the night to deep techno, industrial and rave, drum and bass and downtempo. This time, the proceeds will go to Blindspots, who do support work in bosnia, to the organization of the action camp against the planned deportation center at BER Brandenburg and, as every time, partly to individuals with costs for the right to stay.",
   },
   {
-    id: 7,
+    id: uuid(),
     url: seventhEvent,
     name: "Bombaclart Bass",
     date: "27.04.2023",
-    description: "Disco Event around the corner!",
+    description:
+      "Bombaclart Bass Dance Party Vol. 4. First Dance Party in Berlin is about to take place at Loftus Hall in Berlin Kreuzberg. The music is gonna be a blend of different styles such as breakbeats/ jungle and Trap/ Drill but also Pop and Dance music. We want you to enjoy yourself and have a good time",
   },
   {
-    id: 8,
+    id: uuid(),
     url: eighthEvent,
     name: "Moonlighting",
     date: "12.05.2023",
-    description: "Disco Event around the corner!",
+    description:
+      "An all-night reunion of three great friends serving up a nonstop blend of jackin and sensual house, techno, brainy breaks and footworks. Monty DJ, mullet lord of fragmented shiny textures and mosaic-like rhythms, both in his own productions and sets as well as in the releases of his record labels Flippen Disks and Flippen Bits ...",
+  },
+  {
+    id: uuid(),
+    url: ninethEvent,
+    name: "Vulkan Dance",
+    date: "19.05.2023",
+    description:
+      "Like with any good tradition - pausing it for some time will just make it better. This goes for the annual post - KARNEVAL DER KULTUREN PARADE - soirée at SAMEHEADS, under the banner of VULKANDANCE. The corona virus paused this tradition for a while, now - but here we are back again in true style + fashion : SAMEHEADS survivor + veteran DJ NOMAD invited 2 of his favourite selectors of tropical music to share the 1210ers (Yes, it's a vinyl session) on this special day.",
+  },
+  {
+    id: uuid(),
+    url: tenthEvent,
+    name: "Baketown Berlin",
+    date: "26.05.2023",
+    description:
+      "Afro Latin Bliss with a Psychedelic Twist! Join us as we launch Acid Baile which is Berlin's newest party collective that will be showering dancefloors with their soulful Latin electronica fused with heavy bassline beats! For our debut party we have brought together a feast full of tropical heavyweights with Kotoe & Grace Kelly joined by resident DJ's Philippo & MonoAbe.",
+  },
+  {
+    id: uuid(),
+    url: eleventhEvent,
+    name: "Grounded Theory",
+    date: "23.02.2023",
+    description: "57th edition of Grounded Theory Berlin.",
   },
 ];
 

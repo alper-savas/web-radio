@@ -33,22 +33,50 @@ const MainNavigation = () => {
         </div>
         <ul className={classes.mainNavList}>
           <li>
-            <NavLink className={classes.mainNavItem} to="/">
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? `${classes.mainNavItem} ${classes.active}`
+                  : classes.mainNavItem
+              }
+              to="/"
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink className={classes.mainNavItem} to="/picks">
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? `${classes.mainNavItem} ${classes.active}`
+                  : classes.mainNavItem
+              }
+              to="/picks"
+            >
               Picks
             </NavLink>
           </li>
           <li>
-            <NavLink className={classes.mainNavItem} to="/events">
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? `${classes.mainNavItem} ${classes.active}`
+                  : classes.mainNavItem
+              }
+              to="/events"
+            >
               Events
             </NavLink>
           </li>
           <li>
-            <NavLink className={classes.mainNavItem} to="/about">
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? `${classes.mainNavItem} ${classes.active}`
+                  : classes.mainNavItem
+              }
+              to="/about"
+            >
               About
             </NavLink>
           </li>

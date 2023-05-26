@@ -3,7 +3,7 @@ import classes from "./EventsSlider.module.css";
 import { Fragment } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ReactComponent as ChevronBack } from "../assets/chevron-back-sharp.svg";
 import { ReactComponent as ChevronForward } from "../assets/chevron-forward-sharp.svg";
 import { events, responsive } from "../data/homepageData";
@@ -39,7 +39,8 @@ const EventsSlider = () => {
       >
         {events.map((event) => {
           return (
-            <NavLink
+            <Link
+              to={`/events/${event.id}`}
               className={`${classes.event} ${
                 id === event.id && classes.eventHover
               }`}
@@ -62,7 +63,7 @@ const EventsSlider = () => {
                   <p>{event.date}</p>
                 </div>
               </div>
-            </NavLink>
+            </Link>
           );
         })}
       </Carousel>

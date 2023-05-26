@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import classes from "./PicksSlider.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ReactComponent as ChevronBack } from "../assets/chevron-back-sharp.svg";
 import { ReactComponent as ChevronForward } from "../assets/chevron-forward-sharp.svg";
 import { picksImages, responsive } from "../data/homepageData";
@@ -38,7 +38,8 @@ const PicksSlider = () => {
       >
         {picksImages.map((image) => {
           return (
-            <NavLink
+            <Link
+              to={`/picks/${image.id}`}
               className={`${classes.picksImage} ${
                 id === image.id && classes.picksImageHover
               }`}
@@ -62,7 +63,7 @@ const PicksSlider = () => {
                   <p className={classes.genre}>{image.genre}</p>
                 </div>
               </div>
-            </NavLink>
+            </Link>
           );
         })}
       </Carousel>

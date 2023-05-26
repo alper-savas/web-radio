@@ -4,22 +4,30 @@ const MainFooter = () => {
   return (
     <div className={classes.footer}>
       <div className={classes.radioInfo}>
-        <h1>Root</h1>
+        <h1>Radiant</h1>
         <p>
-          Root Radio is an independent radio based in Istanbul broadcasting from
+          Root Radio is an independent radio based in Berlin broadcasting from
           all around the world.
         </p>
       </div>
       <div className={classes.quickLinks}>
         <h3>Quick Links</h3>
-        <p>Contribute</p>
-        <p>Support Us</p>
-        <p>Archive</p>
-        <p>About</p>
+        <a href="/">
+          <p>Contribute</p>
+        </a>
+        <a href="/">
+          <p>Support Us</p>
+        </a>
+        <a href="/">
+          <p>Archive</p>
+        </a>
+        <a href="/">
+          <p>About</p>
+        </a>
       </div>
       <div className={classes.contact}>
         <h3>Contact</h3>
-        <p>Contact us at rootradiolive@gmail.com</p>
+        <p>Contact us at radiantradiolive@gmail.com</p>
       </div>
       <div className={classes.newsletter}>
         <h3>Sign up to our newsletter</h3>

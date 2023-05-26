@@ -23,10 +23,18 @@ const Schedule = () => {
       <div className={classes.leftSection}>
         <img src={scheduleImage} alt="Schedule"></img>
         <div className={classes.logos}>
-          <SoundLogo />
-          <InstaLogo />
-          <FaceLogo />
-          <MailLogo />
+          <a href="https://soundcloud.com/">
+            <SoundLogo />
+          </a>
+          <a href="https://www.instagram.com/">
+            <InstaLogo />
+          </a>
+          <a href="https://www.facebook.com/">
+            <FaceLogo />
+          </a>
+          <a href="mailto:radiantradiolive@gmail.com">
+            <MailLogo />
+          </a>
         </div>
       </div>
       <div className={classes.rightSection}>

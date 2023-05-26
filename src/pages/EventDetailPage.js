@@ -1,9 +1,9 @@
-import ShowItem from "../components/ShowItem";
+import EventsDetail from "../components/EventsDetail";
 
 const ShowDetailPage = () => {
   return (
     <div>
-      <ShowItem />
+      <EventsDetail />
     </div>
   );
 };
