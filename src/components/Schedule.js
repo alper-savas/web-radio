@@ -8,9 +8,9 @@ import { schedule } from "../data/homepageData";
 import { useState } from "react";
 
 const Schedule = () => {
-  const weekday = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const date = new Date();
-  let day = weekday[date.getDay() - 1];
+  let day = weekday[date.getDay()];
 
   const [clickedDay, setClickedDay] = useState(day);
 
@@ -90,16 +90,20 @@ const Schedule = () => {
           </button>
         </div>
         <div className={classes.scheduleContainer}>
-          {schedule
-            .filter((el) => el.day === clickedDay)
-            .map((el) => {
-              return (
-                <div className={classes.schedule}>
-                  <div className={classes.time}>{el.time}</div>
-                  <div className={classes.artist}>{el.artist}</div>
-                </div>
-              );
-            })}
+          <ul>
+            {schedule
+              .filter((el) => el.day === clickedDay)
+              .map((el) => {
+                return (
+                  <li key={el.id}>
+                    <div className={classes.schedule}>
+                      <div className={classes.time}>{el.time}</div>
+                      <div className={classes.artist}>{el.artist}</div>
+                    </div>
+                  </li>
+                );
+              })}
+          </ul>
         </div>
       </div>
     </div>

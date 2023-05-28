@@ -39,6 +39,7 @@ const PicksSlider = () => {
         {picksImages.map((image) => {
           return (
             <Link
+              key={image.id}
               to={`/picks/${image.id}`}
               className={`${classes.picksImage} ${
                 id === image.id && classes.picksImageHover

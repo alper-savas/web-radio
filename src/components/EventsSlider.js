@@ -40,6 +40,7 @@ const EventsSlider = () => {
         {events.map((event) => {
           return (
             <Link
+              key={event.id}
               to={`/events/${event.id}`}
               className={`${classes.event} ${
                 id === event.id && classes.eventHover

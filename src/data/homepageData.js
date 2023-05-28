@@ -1,35 +1,36 @@
 import uuid from "react-uuid";
-import firstImage from "../assets/images/01pick.png";
-import secondImage from "../assets/images/02pick.png";
-import thirdImage from "../assets/images/03pick.png";
-import fourthImage from "../assets/images/07pick.png";
-import fifthImage from "../assets/images/05pick.png";
-import sixthImage from "../assets/images/06pick.png";
-import seventhImage from "../assets/images/04pick.png";
-import eighthImage from "../assets/images/08pick.png";
-import ninethImage from "../assets/images/09pick.png";
-import tenthImage from "../assets/images/10pick.png";
-import eleventhImage from "../assets/images/11pick.png";
-import twelfthImage from "../assets/images/12pick.png";
-import thirteenthImage from "../assets/images/13pick.png";
-import fourteenthImage from "../assets/images/14pick.png";
-import fifteenthImage from "../assets/images/15pick.png";
-import sixteenthImage from "../assets/images/16pick.png";
-import seventeenthImage from "../assets/images/17pick.png";
-import eighteenthImage from "../assets/images/18pick.png";
-import nineteenthImage from "../assets/images/19pick.png";
-import twentiethImage from "../assets/images/20pick.png";
-import firstEvent from "../assets/images/01event.png";
-import secondEvent from "../assets/images/02event.png";
-import thirdEvent from "../assets/images/03event.png";
-import fourthEvent from "../assets/images/04event.png";
-import fifthEvent from "../assets/images/05event.png";
-import sixthEvent from "../assets/images/06event.png";
-import seventhEvent from "../assets/images/07event.png";
-import eighthEvent from "../assets/images/08event.png";
-import ninethEvent from "../assets/images/09event.png";
-import tenthEvent from "../assets/images/10event.png";
-import eleventhEvent from "../assets/images/11event.png";
+import firstImage from "../assets/images/01pick.webp";
+import secondImage from "../assets/images/02pick.webp";
+import thirdImage from "../assets/images/03pick.webp";
+import fourthImage from "../assets/images/04pick.webp";
+import fifthImage from "../assets/images/05pick.webp";
+import sixthImage from "../assets/images/06pick.webp";
+import seventhImage from "../assets/images/07pick.webp";
+import eighthImage from "../assets/images/08pick.webp";
+import ninethImage from "../assets/images/09pick.webp";
+import tenthImage from "../assets/images/10pick.webp";
+import eleventhImage from "../assets/images/11pick.webp";
+import twelfthImage from "../assets/images/12pick.webp";
+import thirteenthImage from "../assets/images/13pick.webp";
+import fourteenthImage from "../assets/images/14pick.webp";
+import fifteenthImage from "../assets/images/15pick.webp";
+import sixteenthImage from "../assets/images/16pick.webp";
+import seventeenthImage from "../assets/images/17pick.webp";
+import eighteenthImage from "../assets/images/18pick.webp";
+import nineteenthImage from "../assets/images/19pick.webp";
+import twentiethImage from "../assets/images/20pick.webp";
+import firstEvent from "../assets/images/01event.webp";
+import secondEvent from "../assets/images/02event.webp";
+import thirdEvent from "../assets/images/03event.webp";
+import fourthEvent from "../assets/images/04event.webp";
+import fifthEvent from "../assets/images/05event.webp";
+import sixthEvent from "../assets/images/06event.webp";
+import seventhEvent from "../assets/images/07event.webp";
+import eighthEvent from "../assets/images/08event.webp";
+import ninethEvent from "../assets/images/09event.webp";
+import tenthEvent from "../assets/images/10event.webp";
+import eleventhEvent from "../assets/images/11event.webp";
+import twelfthEvent from "../assets/images/12event.webp";
 
 export const responsive = {
   superLargeDesktop: {
@@ -319,8 +320,16 @@ export const events = [
     id: uuid(),
     url: eleventhEvent,
     name: "Grounded Theory",
-    date: "23.02.2023",
+    date: "28.05.2023",
     description: "57th edition of Grounded Theory Berlin.",
+  },
+  {
+    id: uuid(),
+    url: twelfthEvent,
+    name: "Paradise Garage",
+    date: "02.06.2023",
+    description:
+      "We believe that great musical traditions should never die. Our Paradise Garage party series is a tribute to the legendary New Yorker Paradise Garage club that was the place where House music and Disco bloomed between 1976 and the time of its closure in 1987. Our Paradise Garage remains 100% loyal to the musical tradition of the New Yorker club and his legendary resident Larry Levan. You will not Techno, or any of the common modern interpretations of House music and Disco at the party.",
   },
 ];
 

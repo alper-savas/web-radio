@@ -6,8 +6,8 @@ const MainFooter = () => {
       <div className={classes.radioInfo}>
         <h1>Radiant</h1>
         <p>
-          Root Radio is an independent radio based in Berlin broadcasting from
-          all around the world.
+          Radiant Radio is an independent radio based in Berlin broadcasting
+          from all around the world.
         </p>
       </div>
       <div className={classes.quickLinks}>
